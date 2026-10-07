@@ -10,7 +10,7 @@ import { SEED_READING_TOPICS, SEED_LISTENING_TESTS, SEED_WRITING_TASKS } from '.
 
 const STORAGE_KEYS = {
   READING: 'ielts_hub_reading_topics_v1',
-  LISTENING: 'ielts_hub_listening_tests_v1',
+  LISTENING: 'ielts_hub_listening_tests_v2',
   WRITING: 'ielts_hub_writing_tasks_v1',
   ATTEMPTS: 'ielts_hub_practice_attempts_v1',
   EVALUATIONS: 'ielts_hub_writing_evals_v1',
@@ -54,7 +54,28 @@ class ContentStore {
       this.readingTopics = storedReading ? JSON.parse(storedReading) : [...SEED_READING_TOPICS];
 
       const storedListening = localStorage.getItem(STORAGE_KEYS.LISTENING);
-      this.listeningTests = storedListening ? JSON.parse(storedListening) : [...SEED_LISTENING_TESTS];
+      if (storedListening) {
+        try {
+          const parsed = JSON.parse(storedListening);
+          // Ensure all 10 tests exist with 4 parts and complete ~10-minute duration
+          if (
+            Array.isArray(parsed) &&
+            parsed.length >= 10 &&
+            parsed.every((t) => t.parts && t.parts.length === 4 && (t.totalDurationSeconds || 0) >= 500)
+          ) {
+            this.listeningTests = parsed;
+          } else {
+            this.listeningTests = [...SEED_LISTENING_TESTS];
+            this.persistListening();
+          }
+        } catch {
+          this.listeningTests = [...SEED_LISTENING_TESTS];
+          this.persistListening();
+        }
+      } else {
+        this.listeningTests = [...SEED_LISTENING_TESTS];
+        this.persistListening();
+      }
 
       const storedWriting = localStorage.getItem(STORAGE_KEYS.WRITING);
       this.writingTasks = storedWriting ? JSON.parse(storedWriting) : [...SEED_WRITING_TASKS];
@@ -125,7 +146,18 @@ class ContentStore {
   }
 
   public getListeningTest(idOrSlug: string): ListeningTest | undefined {
-    return this.listeningTests.find((t) => t.id === idOrSlug || t.slug === idOrSlug);
+    const clean = idOrSlug.toLowerCase().trim();
+    const test = this.listeningTests.find(
+      (t) =>
+        t.id.toLowerCase() === clean ||
+        t.slug.toLowerCase() === clean ||
+        clean === t.slug.replace(/^test-0?/, 'test-') ||
+        clean.replace(/^test-0?/, 'test-') === t.slug.replace(/^test-0?/, 'test-')
+    );
+    if (test && test.parts && (!test.questions || test.questions.length === 0)) {
+      test.questions = test.parts.flatMap((p) => p.questions);
+    }
+    return test;
   }
 
   public saveListeningTest(test: ListeningTest): void {

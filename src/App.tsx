@@ -47,7 +47,13 @@ function MainRouter() {
     } else if (currentPath.startsWith('/reading')) {
       document.title = 'IELTS Reading Practice Library | IELTS PRACTICE HUB';
     } else if (currentPath.startsWith('/listening')) {
-      document.title = 'IELTS Listening Audio Tests | IELTS PRACTICE HUB';
+      const parts = currentPath.split('/');
+      const slug = parts[2];
+      if (slug) {
+        document.title = `Listening ${slug.toUpperCase()} | IELTS PRACTICE HUB`;
+      } else {
+        document.title = 'IELTS Listening Audio Tests Repository | IELTS PRACTICE HUB';
+      }
     } else if (currentPath.startsWith('/writing')) {
       document.title = 'IELTS Writing Studio & Band Diagnostic | IELTS PRACTICE HUB';
     } else if (currentPath.startsWith('/practice')) {
@@ -78,7 +84,7 @@ function MainRouter() {
     if (currentPath.startsWith('/listening')) {
       const parts = currentPath.split('/');
       const slug = parts[2] || undefined;
-      return <ListeningPage initialTestSlug={slug} />;
+      return <ListeningPage initialTestSlug={slug} onNavigate={navigate} />;
     }
 
     if (currentPath.startsWith('/writing')) {

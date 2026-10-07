@@ -122,17 +122,36 @@ export interface ListeningQuestion {
   };
 }
 
+export interface ListeningPart {
+  id: string;
+  partNumber: 1 | 2 | 3 | 4;
+  title: string;
+  situation: string;
+  durationMinutes: number;
+  durationSeconds?: number;
+  audioUrl?: string;
+  audioScript: string;
+  transcript?: string;
+  speakerIntro?: string;
+  questions: ListeningQuestion[];
+}
+
 export interface ListeningTest {
   id: string;
   slug: string;
   title: string;
-  section: 1 | 2 | 3 | 4;
-  situation: string; // e.g., 'Conversation between receptionist and guest'
+  topic?: string;
+  description?: string;
+  section?: 1 | 2 | 3 | 4;
+  situation?: string;
   difficulty: DifficultyLevel;
-  durationMinutes: number;
-  audioUrl?: string; // external or fallback
-  audioScript: string;
-  questions: ListeningQuestion[];
+  durationMinutes: number; // approximately 10 minutes total
+  totalDurationSeconds?: number;
+  audioUrl?: string;
+  audioScript?: string;
+  published?: boolean;
+  parts: ListeningPart[];
+  questions?: ListeningQuestion[];
 }
 
 export type WritingCategory = 'academic' | 'general';
