@@ -1,0 +1,6 @@
+{
+  "name": "IELTS PRACTICE HUB",
+  "description": "Complete online IELTS preparation platform with Reading, Listening, and Writing practice, instant feedback, error analysis, and band scoring.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
