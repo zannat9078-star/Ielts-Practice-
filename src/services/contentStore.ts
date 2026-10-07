@@ -61,7 +61,7 @@ class ContentStore {
           if (
             Array.isArray(parsed) &&
             parsed.length >= 10 &&
-            parsed.every((t) => t.parts && t.parts.length === 4 && (t.totalDurationSeconds || 0) >= 500)
+            parsed.every((t) => t.parts && t.parts.length === 4 && (t.totalDurationSeconds || 0) >= 500 && t.audioUrl)
           ) {
             this.listeningTests = parsed;
           } else {

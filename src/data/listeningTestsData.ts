@@ -5,6 +5,7 @@ export const SEED_LISTENING_TESTS: ListeningTest[] = [
   {
     id: 'list-01',
     slug: 'test-01',
+    audioUrl: '/audio/test-01.mp3',
     title: 'Listening Test 01: Booking a Hotel Room',
     topic: 'Booking a Hotel Room',
     description: 'Complete 10-minute IELTS Listening exam simulation featuring 4 progressive parts: room reservation enquiry, guest services overview, corporate conference logistics, and architectural history of urban hotels.',
@@ -16,6 +17,7 @@ export const SEED_LISTENING_TESTS: ListeningTest[] = [
       {
         id: 'list-01-p1',
         partNumber: 1,
+        audioUrl: '/audio/test-01-p1.mp3',
         title: 'Part 1: Room Reservation & Special Requirements',
         situation: 'Telephone conversation between an international traveler and the reservation manager at the Grand Regency Hotel.',
         durationMinutes: 2.5,
@@ -84,6 +86,7 @@ Receptionist: Splendid. I have reserved the suite under your name, and an email 
       {
         id: 'list-01-p2',
         partNumber: 2,
+        audioUrl: '/audio/test-01-p2.mp3',
         title: 'Part 2: Hotel Guest Amenities & Safety Briefing',
         situation: 'Monologue by the head concierge addressing new hotel guests in the reception atrium.',
         durationMinutes: 2.2,
@@ -128,6 +131,7 @@ Finally, if you require dry cleaning or laundry services, garments placed in the
       {
         id: 'list-01-p3',
         partNumber: 3,
+        audioUrl: '/audio/test-01-p3.mp3',
         title: 'Part 3: Corporate Event & Catering Review Meeting',
         situation: 'Discussion between an event organizer and hotel catering director reviewing seminar arrangements.',
         durationMinutes: 2.6,
@@ -176,6 +180,7 @@ Catering Director: At 3:30 PM, we will serve artisanal herbal infusions, fair-tr
       {
         id: 'list-01-p4',
         partNumber: 4,
+        audioUrl: '/audio/test-01-p4.mp3',
         title: 'Part 4: The Evolution of Grand Railway Hotels',
         situation: 'University lecture in architectural history detailing the rise and ecological adaptation of heritage hospitality buildings.',
         durationMinutes: 2.7,
@@ -239,6 +244,7 @@ In the 21st century, these heritage structures face a novel architectural challe
   {
     id: 'list-02',
     slug: 'test-02',
+    audioUrl: '/audio/test-02.mp3',
     title: 'Listening Test 02: University Student Orientation',
     topic: 'University Student Orientation',
     description: 'Comprehensive 10-minute 4-part IELTS listening exam covering campus registration, student union clubs, academic integrity tutorial, and lecture on cognitive study habits.',
@@ -250,6 +256,7 @@ In the 21st century, these heritage structures face a novel architectural challe
       {
         id: 'list-02-p1',
         partNumber: 1,
+        audioUrl: '/audio/test-02-p1.mp3',
         title: 'Part 1: Student Registration & ID Badge Issuance',
         situation: 'New student registering with the university international admissions officer.',
         durationMinutes: 2.5,
@@ -299,6 +306,7 @@ Officer: From the Student Service Hub on the ground floor of the Carrington Buil
       {
         id: 'list-02-p2',
         partNumber: 2,
+        audioUrl: '/audio/test-02-p2.mp3',
         title: 'Part 2: Student Union Societies & Volunteer Opportunities',
         situation: 'Student Union President briefing first-year students on extracurricular activities.',
         durationMinutes: 2.3,
@@ -342,6 +350,7 @@ Annual membership for most societies is just £5, which covers workshops and equ
       {
         id: 'list-02-p3',
         partNumber: 3,
+        audioUrl: '/audio/test-02-p3.mp3',
         title: 'Part 3: Academic Writing & Plagiarism Avoidance Tutorial',
         situation: 'Tutorial between a faculty advisor and two undergraduate researchers reviewing thesis citations.',
         durationMinutes: 2.6,
@@ -387,6 +396,7 @@ Advisor: In scientific writing, direct verbatim quotes should account for less t
       {
         id: 'list-02-p4',
         partNumber: 4,
+        audioUrl: '/audio/test-02-p4.mp3',
         title: 'Part 4: Cognitive Science of Spaced Retrieval Practice',
         situation: 'Psychology lecture explaining how spaced repetition and active recall optimize long-term semantic memory.',
         durationMinutes: 2.6,
@@ -434,6 +444,7 @@ In contrast, active retrieval practice—such as self-testing with digital flash
   {
     id: 'list-03',
     slug: 'test-03',
+    audioUrl: '/audio/test-03.mp3',
     title: 'Listening Test 03: Joining a Sports Club',
     topic: 'Joining a Sports Club',
     description: '10-minute 4-part IELTS listening exam covering sports club membership enquiry, gym safety induction, sports nutrition lecture, and physiology of anaerobic training.',
@@ -445,6 +456,7 @@ In contrast, active retrieval practice—such as self-testing with digital flash
       {
         id: 'list-03-p1',
         partNumber: 1,
+        audioUrl: '/audio/test-03-p1.mp3',
         title: 'Part 1: Sports Complex Membership Registration',
         situation: 'Conversation between a prospective member and a sports centre receptionist.',
         durationMinutes: 2.5,
@@ -494,6 +506,7 @@ Receptionist: Certainly, Daniel. You will also receive one free personal trainin
       {
         id: 'list-03-p2',
         partNumber: 2,
+        audioUrl: '/audio/test-03-p2.mp3',
         title: 'Part 2: Gym Equipment Safety & Etiquette',
         situation: 'Facility manager providing a safety induction tour to new gym members.',
         durationMinutes: 2.3,
@@ -523,6 +536,7 @@ Finally, lockers operate using personal padlocks. You may bring your own padlock
       {
         id: 'list-03-p3',
         partNumber: 3,
+        audioUrl: '/audio/test-03-p3.mp3',
         title: 'Part 3: Sports Nutrition and Hydration Protocol',
         situation: 'Sports nutritionist answering questions from two student marathon runners.',
         durationMinutes: 2.6,
@@ -553,6 +567,7 @@ Nutritionist: Both are effective. However, consume them with at least two hundre
       {
         id: 'list-03-p4',
         partNumber: 4,
+        audioUrl: '/audio/test-03-p4.mp3',
         title: 'Part 4: Exercise Physiology and Muscle Hypertrophy',
         situation: 'Kinesiology university lecture on mechanical tension and muscle fiber recruitment.',
         durationMinutes: 2.6,
@@ -585,6 +600,7 @@ When muscle fibers are subjected to high mechanical loads near muscular failure,
   {
     id: 'list-04',
     slug: 'test-04',
+    audioUrl: '/audio/test-04.mp3',
     title: 'Listening Test 04: Library Membership & Academic Archives',
     topic: 'Library Membership',
     description: '10-minute 4-part IELTS listening test covering municipal library membership, digital archives tour, research database consultation, and history of papermaking technology.',
@@ -596,6 +612,7 @@ When muscle fibers are subjected to high mechanical loads near muscular failure,
       {
         id: 'list-04-p1',
         partNumber: 1,
+        audioUrl: '/audio/test-04-p1.mp3',
         title: 'Part 1: Library Card Registration',
         situation: 'New resident registering for a borrowing card at the City Central Library.',
         durationMinutes: 2.5,
@@ -645,6 +662,7 @@ Librarian: Thank you, Catherine. With this card, you can borrow up to twelve phy
       {
         id: 'list-04-p2',
         partNumber: 2,
+        audioUrl: '/audio/test-04-p2.mp3',
         title: 'Part 2: Special Collections & Microfilm Room Tour',
         situation: 'Head archivist describing local history records and rare manuscripts.',
         durationMinutes: 2.3,
@@ -673,6 +691,7 @@ Gloves must be worn when examining pre-Victorian town registers. If you require 
       {
         id: 'list-04-p3',
         partNumber: 3,
+        audioUrl: '/audio/test-04-p3.mp3',
         title: 'Part 3: Academic Database Research Consultation',
         situation: 'University librarian guiding a graduate student through Boolean search operators.',
         durationMinutes: 2.6,
@@ -703,6 +722,7 @@ Librarian: Yes, we collaborate with sixty academic libraries nationwide. Interli
       {
         id: 'list-04-p4',
         partNumber: 4,
+        audioUrl: '/audio/test-04-p4.mp3',
         title: 'Part 4: The Invention and Dissemination of Rag Paper',
         situation: 'History of technology lecture on medieval papermaking mills in Europe.',
         durationMinutes: 2.6,
@@ -735,6 +755,7 @@ Papermaking originated in China during the Han dynasty, reaching Samarkand in th
   {
     id: 'list-05',
     slug: 'test-05',
+    audioUrl: '/audio/test-05.mp3',
     title: 'Listening Test 05: Environmental Research Project',
     topic: 'Environmental Research Project',
     description: '10-minute 4-part IELTS listening exam covering field trip logistics, wildlife volunteer survey, thesis methodology discussion, and wetland ecosystem lecture.',
@@ -746,6 +767,7 @@ Papermaking originated in China during the Han dynasty, reaching Samarkand in th
       {
         id: 'list-05-p1',
         partNumber: 1,
+        audioUrl: '/audio/test-05-p1.mp3',
         title: 'Part 1: Field Trip Gear & Logistics',
         situation: 'Biology student checking in equipment with the departmental lab technician.',
         durationMinutes: 2.5,
@@ -791,6 +813,7 @@ Technician: The bus departs promptly at 6:45 AM from behind the science building
       {
         id: 'list-05-p2',
         partNumber: 2,
+        audioUrl: '/audio/test-05-p2.mp3',
         title: 'Part 2: Estuary Habitat Conservation Volunteers',
         situation: 'Conservation officer briefing local volunteers on salt marsh bird censuses.',
         durationMinutes: 2.3,
@@ -819,6 +842,7 @@ Volunteers in Zone 1 will focus on recording migrant wader populations, particul
       {
         id: 'list-05-p3',
         partNumber: 3,
+        audioUrl: '/audio/test-05-p3.mp3',
         title: 'Part 3: Thesis Methodology Review: Microplastics in Benthic Sediments',
         situation: 'Two postgraduate researchers discussing sediment core extraction with their supervisor.',
         durationMinutes: 2.6,
@@ -849,6 +873,7 @@ Clara: We chose concentrated zinc chloride solution with a density of 1.6 grams 
       {
         id: 'list-05-p4',
         partNumber: 4,
+        audioUrl: '/audio/test-05-p4.mp3',
         title: 'Part 4: Blue Carbon Sequestration in Tidal Wetlands',
         situation: 'Ecology lecture discussing carbon storage capacity of mangrove forests and salt marshes.',
         durationMinutes: 2.6,
@@ -881,6 +906,7 @@ The underlying mechanism resides in the anoxic, waterlogged nature of tidal soil
   {
     id: 'list-06',
     slug: 'test-06',
+    audioUrl: '/audio/test-06.mp3',
     title: 'Listening Test 06: Travel and Transportation Networks',
     topic: 'Travel and Transportation',
     description: '10-minute 4-part IELTS listening test covering intercity train booking, airport transit guidance, urban congestion pricing analysis, and maglev rail technology.',
@@ -892,6 +918,7 @@ The underlying mechanism resides in the anoxic, waterlogged nature of tidal soil
       {
         id: 'list-06-p1',
         partNumber: 1,
+        audioUrl: '/audio/test-06-p1.mp3',
         title: 'Part 1: Intercity High-Speed Train Ticketing',
         situation: 'Passenger purchasing long-distance rail tickets at a railway station booking office.',
         durationMinutes: 2.5,
@@ -939,6 +966,7 @@ Clerk: Yes, coach D is designated as the Quiet Coach, meaning phone calls are pr
       {
         id: 'list-06-p2',
         partNumber: 2,
+        audioUrl: '/audio/test-06-p2.mp3',
         title: 'Part 2: Airport Terminal Navigation and Transfer',
         situation: 'Airport customer service representative briefing international transit passengers.',
         durationMinutes: 2.3,
@@ -967,6 +995,7 @@ If you have a layover exceeding 3 hours and wish to visit the shower lounges, co
       {
         id: 'list-06-p3',
         partNumber: 3,
+        audioUrl: '/audio/test-06-p3.mp3',
         title: 'Part 3: Urban Congestion Pricing and Commuter Mode Shift',
         situation: 'Urban planning seminar evaluating economic impacts of electronic congestion charges.',
         durationMinutes: 2.6,
@@ -996,6 +1025,7 @@ Student: Bus ridership increased by nine percent, while underground metro riders
       {
         id: 'list-06-p4',
         partNumber: 4,
+        audioUrl: '/audio/test-06-p4.mp3',
         title: 'Part 4: Linear Motor Propulsion and Aerodynamic Drag in Maglev Trains',
         situation: 'Engineering lecture on magnetic levitation dynamics and vacuum tube transport.',
         durationMinutes: 2.6,
@@ -1028,6 +1058,7 @@ Without wheel friction, aerodynamic drag becomes the sole limiting resistive for
   {
     id: 'list-07',
     slug: 'test-07',
+    audioUrl: '/audio/test-07.mp3',
     title: 'Listening Test 07: Museum Tour & Ancient Artifacts',
     topic: 'Museum Tour',
     description: '10-minute 4-part IELTS listening test covering guided tour booking, gallery orientation, curation seminar on bronze casting, and lecture on maritime archaeology.',
@@ -1039,6 +1070,7 @@ Without wheel friction, aerodynamic drag becomes the sole limiting resistive for
       {
         id: 'list-07-p1',
         partNumber: 1,
+        audioUrl: '/audio/test-07-p1.mp3',
         title: 'Part 1: Museum Guided Tour Booking',
         situation: 'School teacher arranging an exhibition visit for thirty pupils.',
         durationMinutes: 2.5,
@@ -1071,6 +1103,7 @@ Officer: Yes, the Clore Education Suite on the ground floor is reserved for scho
       {
         id: 'list-07-p2',
         partNumber: 2,
+        audioUrl: '/audio/test-07-p2.mp3',
         title: 'Part 2: Museum Gallery Layout and Facilities',
         situation: 'Docent welcoming visitors in the museum central rotunda.',
         durationMinutes: 2.3,
@@ -1100,6 +1133,7 @@ Flash photography is strictly prohibited in all galleries to prevent pigment deg
       {
         id: 'list-07-p3',
         partNumber: 3,
+        audioUrl: '/audio/test-07-p3.mp3',
         title: 'Part 3: Conservation Seminar on Bronze Age Metallurgy',
         situation: 'Archaeology students discussing lost-wax casting methods with a museum conservator.',
         durationMinutes: 2.6,
@@ -1130,6 +1164,7 @@ Conservator: We treat corroded artifacts with benzotriazole inhibitors in vacuum
       {
         id: 'list-07-p4',
         partNumber: 4,
+        audioUrl: '/audio/test-07-p4.mp3',
         title: 'Part 4: Maritime Archaeology and Underwater Shipwreck Preservation',
         situation: 'Academic lecture on the recovery and conservation of the Mary Rose warship.',
         durationMinutes: 2.6,
@@ -1162,6 +1197,7 @@ To prevent this catastrophic shrinkage, conservators sprayed the hull continuous
   {
     id: 'list-08',
     slug: 'test-08',
+    audioUrl: '/audio/test-08.mp3',
     title: 'Listening Test 08: Job Interview and Workplace Dynamics',
     topic: 'Job Interview and Workplace',
     description: '10-minute 4-part IELTS listening test covering recruitment registration, employee benefits induction, performance review meeting, and organizational psychology lecture.',
@@ -1173,6 +1209,7 @@ To prevent this catastrophic shrinkage, conservators sprayed the hull continuous
       {
         id: 'list-08-p1',
         partNumber: 1,
+        audioUrl: '/audio/test-08-p1.mp3',
         title: 'Part 1: Recruitment Agency Candidate Intake',
         situation: 'Job candidate registering with an employment agency consultant.',
         durationMinutes: 2.5,
@@ -1221,6 +1258,7 @@ Candidate: I have a one-month notice period.`,
       {
         id: 'list-08-p2',
         partNumber: 2,
+        audioUrl: '/audio/test-08-p2.mp3',
         title: 'Part 2: Corporate Employee Benefits Induction',
         situation: 'HR Director explaining annual leave, pension matching, and health insurance.',
         durationMinutes: 2.3,
@@ -1249,6 +1287,7 @@ Our defined contribution pension scheme provides a 200 percent company match: if
       {
         id: 'list-08-p3',
         partNumber: 3,
+        audioUrl: '/audio/test-08-p3.mp3',
         title: 'Part 3: Quarterly Performance Appraisal Review',
         situation: 'Manager discussing project milestones and professional development targets with a team lead.',
         durationMinutes: 2.6,
@@ -1278,6 +1317,7 @@ Brenda: We recognize that documentation was rushed. We are enrolling our junior 
       {
         id: 'list-08-p4',
         partNumber: 4,
+        audioUrl: '/audio/test-08-p4.mp3',
         title: 'Part 4: Psychological Safety and Agile Innovation in Enterprise Teams',
         situation: 'Business psychology lecture on Amy Edmondson’s psychological safety research.',
         durationMinutes: 2.6,
@@ -1310,6 +1350,7 @@ Contrary to conventional managerial wisdom, high-performing teams do not make fe
   {
     id: 'list-09',
     slug: 'test-09',
+    audioUrl: '/audio/test-09.mp3',
     title: 'Listening Test 09: Community Arts Festival Planning',
     topic: 'Community Event',
     description: '10-minute 4-part IELTS listening test covering festival volunteer registration, market stall layout, council sponsorship meeting, and sociology lecture on festival economics.',
@@ -1321,6 +1362,7 @@ Contrary to conventional managerial wisdom, high-performing teams do not make fe
       {
         id: 'list-09-p1',
         partNumber: 1,
+        audioUrl: '/audio/test-09-p1.mp3',
         title: 'Part 1: Volunteer Steward Registration',
         situation: 'Volunteer registering with the municipal festival coordinator.',
         durationMinutes: 2.5,
@@ -1368,6 +1410,7 @@ Coordinator: Excellent. We provide free meals, an official festival t-shirt, and
       {
         id: 'list-09-p2',
         partNumber: 2,
+        audioUrl: '/audio/test-09-p2.mp3',
         title: 'Part 2: Festival Artisan Market Layout & Health Protocols',
         situation: 'Market coordinator instructing artisanal food and craft vendors.',
         durationMinutes: 2.3,
@@ -1396,6 +1439,7 @@ All hot food stalls must possess an active dry-powder fire extinguisher and comm
       {
         id: 'list-09-p3',
         partNumber: 3,
+        audioUrl: '/audio/test-09-p3.mp3',
         title: 'Part 3: City Council Grant Allocation Review',
         situation: 'Two committee members reviewing financial allocations for sound stages and accessibility ramps.',
         durationMinutes: 2.6,
@@ -1425,6 +1469,7 @@ Member B: Agreed. Accessibility ensures civic inclusivity.`,
       {
         id: 'list-09-p4',
         partNumber: 4,
+        audioUrl: '/audio/test-09-p4.mp3',
         title: 'Part 4: The Multiplier Effect of Cultural Festivals on Local Economies',
         situation: 'Economics lecture examining indirect municipal revenue generated by transient festival tourism.',
         durationMinutes: 2.6,
@@ -1457,6 +1502,7 @@ For every public pound invested in festival infrastructure, visitors expend thre
   {
     id: 'list-10',
     slug: 'test-10',
+    audioUrl: '/audio/test-10.mp3',
     title: 'Listening Test 10: Science and Technology Innovations',
     topic: 'Science and Technology',
     description: '10-minute 4-part IELTS listening test covering lab facility booking, cleanroom protocol briefing, quantum computing discussion, and space telescope engineering lecture.',
@@ -1468,6 +1514,7 @@ For every public pound invested in festival infrastructure, visitors expend thre
       {
         id: 'list-10-p1',
         partNumber: 1,
+        audioUrl: '/audio/test-10-p1.mp3',
         title: 'Part 1: University Nanotechnology Lab Access Registration',
         situation: 'Graduate student applying for access credentials to an electron microscopy suite.',
         durationMinutes: 2.5,
@@ -1513,6 +1560,7 @@ Manager: Perfect. The next gowning workshop is on Tuesday at 2:00 PM in Lab 104.
       {
         id: 'list-10-p2',
         partNumber: 2,
+        audioUrl: '/audio/test-10-p2.mp3',
         title: 'Part 2: Semiconductor Cleanroom Protocols & Particulate Control',
         situation: 'Facility safety officer explaining ISO Class 5 cleanroom airflow and particulate filtration.',
         durationMinutes: 2.3,
@@ -1541,6 +1589,7 @@ Standard paper notebooks and wooden pencils are strictly forbidden because they 
       {
         id: 'list-10-p3',
         partNumber: 3,
+        audioUrl: '/audio/test-10-p3.mp3',
         title: 'Part 3: Quantum Superposition and Qubit Decoherence',
         situation: 'Physics professor discussing dilution refrigerators with two graduate researchers.',
         durationMinutes: 2.6,
@@ -1570,6 +1619,7 @@ Professor: That is a solid baseline. To scale to a hundred logical qubits, we mu
       {
         id: 'list-10-p4',
         partNumber: 4,
+        audioUrl: '/audio/test-10-p4.mp3',
         title: 'Part 4: Cryogenic Optics and Sunshield Engineering of Space Telescopes',
         situation: 'Astrophysics lecture analyzing the James Webb Space Telescope deployment at the L2 Lagrange point.',
         durationMinutes: 2.6,
